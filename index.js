@@ -4,6 +4,7 @@ const mongoose=require('mongoose');
 const morgan=require('morgan');
 const cors=require('cors');
 const Routes = require("./routes/routes");
+const path=require('path');
 
 require('dotenv').config();
 const {NODE_PORT,DATABASE_URL}=process.env;
