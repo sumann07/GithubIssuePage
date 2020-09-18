@@ -36,7 +36,7 @@ mongoose.connect(DATABASE_URL,{
     useFindAndModify:true,
     useNewUrlParser:true
 }).then(()=>{
-    app.listen(process.env.PORT||PORT,()=>{
+    app.listen(process.env.PORT||5000,()=>{
         console.log(`server is running on ${PORT}`);
     })
 }).catch((err)=>{
